@@ -1,0 +1,12 @@
+{
+  "name": "ads-conversion-apis",
+  "version": "1.0.0",
+  "description": "this project helps to track offline conversions of ads for different ads platforms.",
+  "main": "server.js",
+  "author": "SAGAR NANERA",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

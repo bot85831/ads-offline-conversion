@@ -24,7 +24,12 @@ app.get("/ig-webhook", (req, res) => {
   console.log("hub: ", hub);
   console.log("query: ", query);
 
-  return res.send(req.query["hub.challenge"]);
+  return res.json({ challenge: req.query["hub.challenge"] });
+});
+
+app.post("/ig-webhook", (req, res) => {
+  console.log("req.body: ", req.body);
+  return res.json({ status: "success" });
 });
 
 app.post("/register", async (req, res) => {

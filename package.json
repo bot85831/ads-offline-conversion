@@ -4,9 +4,16 @@
   "description": "this project helps to track offline conversions of ads for different ads platforms.",
   "main": "server.js",
   "author": "SAGAR NANERA",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "uuid": "^10.0.0"
   }
 }
